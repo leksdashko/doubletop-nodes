@@ -1,14 +1,13 @@
 :root {
-	--gradient: linear-gradient(92.65deg, #0047FF 0%, #AC42FF 100%), linear-gradient(92.34deg, #1238FF 2.44%, #7635FF 101.89%);
+	--gradient: linear-gradient(92.34deg, #10A9FF 2.44%, #1DFFF1 101.89%, #1DFFF1 101.89%);
 	--radius-large: 25px;
-	--color-purple-shadow: rgba(143, 0, 255, 0.4);
+	--color-blue-shadow: rgba(16, 169, 255, 0.4);
 	--color-black: #101010;
 	--color-dark: #161616;
 	--color-dark-light: #252525;
-	--color-blue: #0447FF;
-	--color-purple: #A742FF;
+	--color-blue: #10A9FF;
+	--color-light-blue: #1CFBF2;
 	--font-vela: 'Vela Sans', Arial, Helvetica, sans-serif;
-	--font-inter: 'Inter', Arial, Helvetica, sans-serif;
 }
 *{
 	padding: 0;
@@ -228,13 +227,13 @@ nav .list-inline-item a:hover{
 	background: var(--gradient);
 	border-radius: 100px;
 	transition: 0.3s;
-	box-shadow: 0px 0px 60px rgba(143, 0, 255, 0.4);
 }
 .btn-gradient{
 	border: none;
 	color: #fff;
 	text-align: left;
 	background: var(--color-blue);
+	box-shadow: 0px 0px 60px var(--color-blue-shadow);
 }
 .btn-gradient:hover::before{
 	opacity: 0;
