@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DoubleTop</title>
+
+	<!-- SEO Tags -->
+	<meta property="og:title"       content="DoubleTop" />
+	<meta property="og:description" content="" />
+	<meta name="description"        content="" />
+	<meta property="og:image"       content="img/" />
+
+	<!-- FavIcon -->
+	<link rel="icon" type="image/ico" href="img/favicon.ico">
+	<link rel="icon" type="image/svg" sizes="128x128" href="img/favicon.svg">
+	<link rel="icon" type="image/svg" sizes="96x96" href="img/favicon.svg">
+	<link rel="icon" type="image/svg" sizes="32x32" href="img/favicon.svg">
+	<link rel="icon" type="image/svg" sizes="16x16" href="img/favicon.svg">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/modals.css">
+
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="js/bootstrap.bundle.min.js" defer></script>
+	<script src="js/swiper-bundle.min.js" defer></script>
+</head>
+<body>
+	<nav class="navbar static" id="top-navigation">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-auto d-flex justify-content-start align-items-center">
+						<a class="logo" href="#home">
+								<img src="img/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="main-menu col-auto d-none d-lg-flex justify-content-start align-items-center">
+						<ul class="list-inline justify-content-centerv align-items-center m-0">
+							<li class="list-inline-item">
+									<a class="" href="#program">Програма</a>
+							</li>
+							<li class="list-inline-item">
+									<a class="" href="#format">Формат</a>
+							</li>
+							<li class="list-inline-item">
+									<a class="" href="#authors">Команда</a>
+							</li>
+							<li class="list-inline-item">
+									<a class="" href="#faq">FAQ</a>
+							</li>
+						</ul>
+					</div>
+	
+					<div class="languages-block col-auto d-flex justify-content-end align-items-center">
+						<ul class="language-list list-inline justify-content-centerv align-items-center m-0">
+							<li class="list-inline-item active">
+								<span class="lang-link">UA</span>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="lang-link">RU</a>
+							</li>
+							<li class="list-inline-item d-none d-lg-inline-block">
+								<button type="button" class="btn-login" data-bs-toggle="modal" data-bs-target="#modalLogin">
+									<img src="img/icon-circle-user.svg"/>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<button class="col-auto navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+						<img src="img/burger-menu.svg" alt="" title="">
+					</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		<div class="offcanvas-header">
+				<img src="img/logo.svg" class="logo" alt="" title="">
+				<button type="button" id="close-mobile-menu" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body mobile-menu">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+						<a class="nav-link" href="#program">Программа</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#authors">Команда</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#format">Формат</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#faq">FAQ</a>
+					</li>
+					<li class="">
+						<a href="#" class="dt-btn btn-gradient mt-4">Авторизація</a>
+					</li>
+				</ul>
+		</div>
+	</div>
+
+	<main class="section-disclaimer">
+		<div class="container">
+			<div class="disclaimer">
+				<div class="content">
+					<button type="button" class="dt-btn btn-gradient" data-bs-toggle="modal" data-bs-target="#modalBooking">
+						Booking
+					</button>
+					<button type="button" class="dt-btn btn-gradient" data-bs-toggle="modal" data-bs-target="#modalPayments">
+						Payments
+					</button>
+					<button type="button" class="dt-btn btn-gradient" data-bs-toggle="modal" data-bs-target="#modalWelcome">
+						Welcome
+					</button>
+					<button type="button" class="dt-btn btn-gradient" data-bs-toggle="modal" data-bs-target="#modalLogin">
+						Login
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="footer-logo">
+						<img src="img/logo.svg">
+					</div>
+					<div class="footer-list">
+						<ul>
+							<li>
+								<a href="#">Для кого</a>
+							</li>
+							<li>
+								<a href="#">Програма</a>
+							</li>
+							<li>
+								<a href="#">Тарифи</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h5>Документи</h5>
+					<div class="footer-list">
+						<ul>
+							<li>
+								<a href="#">Для кого</a>
+							</li>
+							<li>
+								<a href="#">Програма</a>
+							</li>
+							<li>
+								<a href="#">Тарифи</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h5>Наші контакти</h5>
+					<div class="footer-list">
+						<ul>
+							<li>
+								<a href="#">Для кого</a>
+							</li>
+							<li>
+								<a href="#">Програма</a>
+							</li>
+							<li>
+								<a href="tel:+380938952261">+380938952261</a>
+							</li>
+							<li>
+								<div class="footer-social">
+									<a href="#">
+										<img src="img/icon-pr-youtube.svg">
+									</a>
+									<a href="#">
+										<img src="img/icon-pr-instagram.svg">
+									</a>
+									<a href="#">
+										<img src="img/icon-pr-telegram.svg">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade modal-booking" id="modalBooking" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h3 class="modal-title">Бронювання місця та<br/>вартості навчання</h3>
+					<p class="description">У вас є можливість за 50$ забронювати за собою місце та вартість навчання. Після оплати броні з вами звяжеться менеджер та допоможе доплатити залишок зручним для вас способом. </p>
+					<div class="notice">Важливо: вартість броні не повертається.</div>
+					<a href="#" class="dt-btn btn-gradient">ЗАБРОНЮВАТИ ЗА 50$</a>
+					<div class="mt-3">
+						<a href="#" class="link">Ні, дякую, перейти на головну сторінку</a>
+					</div>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-welcome" id="modalWelcome" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h3 class="modal-title">Ласкаво<br/>просимо</h3>
+					<p class="description">Щоб перейти на сайт,<br/>прив’яжіть свій телеграм</p>
+					<a href="#" class="dt-btn btn-gradient">Купити навчання</a>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-payments" id="modalPayments" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h3 class="modal-title">ВАРІАНТИ<br/>ОПЛАТИ</h3>
+					<div class="payments-types">
+						<a href="#" class="payment-btn">
+							<img src="img/icon-pay-card.png">
+							<span>Сплатити карткою</span>
+						</a>
+
+						<a href="#" class="payment-btn">
+							<img src="img/icon-pay-coin.png">
+							<span>Сплатити криптою</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-login" id="modalLogin" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h3 class="modal-title">Залишити<br/>заявку</h3>
+					<p class="description">Заповніть своє імя, номер<br/>телефону та нік Telegram.</p>
+					<form action="#">
+						<div class="mb-4">
+							<input type="text" class="form-control form-control-lg" placeholder="ім’я">
+						</div>
+						<div class="mb-4">
+							<input type="text" class="form-control form-control-lg" placeholder="@ нік у телеграм">
+						</div>
+						<div class="mb-4">
+							<input type="text" class="form-control form-control-lg" placeholder="номер телефону">
+						</div>
+	
+						<div class="">
+							<button type="submit" class="dt-btn btn-gradient">ЗАЛИШИТИ ЗАЯВКУ</button>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
