@@ -1,16 +1,23 @@
 @media only screen and (max-width: 1400px) {
-	.why-img{
-		right: -120px;
-	}
 	.why-img img {
     height: 500px;
-    width: 687px;
+    width: 430px;
+	}
+	nav .list-inline-item {
+    margin: 0 10px;
+	}
+	.numbers-img img {
+    height: 782px;
+    width: 638px;
 	}
 }
 @media only screen and (max-width: 1325px) {
 	
 }
 @media only screen and (max-width: 1200px) {
+	.oportunity-image{
+		width: 500px;
+	}
 	nav .list-inline-item {
     margin: 0px 10px;
 	}
@@ -78,10 +85,23 @@
 	}
 	.why-img img {
     height: 395px;
-    width: 520px;
+    width: 330px;
+	}
+	.section-format {
+		padding-top: 0;
+	}
+	.numbers-img {
+		padding-top: 200px;
 	}
 }
 @media only screen and (max-width: 992px) {
+	.numbers-img {
+		padding-top: 300px;
+	}
+	.numbers-img img {
+    height: 575px;
+    width: 461px;
+	}
 	.accordion-item button {
     padding: 15px 20px;
     font-size: 18px;
@@ -104,7 +124,7 @@
     padding-top: 175px;
 	}
 	header .description {
-    margin-top: 300px;
+		width: 100%;
 	}	
 	header .intro-img {
     width: 527px;
@@ -148,12 +168,7 @@
     width: 100%;
 	}
 	.why-img {
-    height: 400px;
-    width: 550px;
-    top: auto;
-    bottom: -445px;
-    right: auto;
-		left: 0;
+    display: none;
 	}
 	.section-why-content{
 		background-image: none;
@@ -171,8 +186,48 @@
 	.section-testimonials{
 		background-image: none;
 	}
+	.section-oportunity {
+		padding-top: 150px;
+	}
+	.oportunity-notice {
+    margin-top: 100px;
+	}
+	.section-numbers-content {
+		background-image: none;
+	}
 }
 @media only screen and (max-width: 768px) {
+	.section-offers {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: url(../img/tariffs-img.png) center bottom no-repeat, url(../img/offers-light-bg.png) 200px 50px no-repeat;
+	}
+	.section-offers .section-title{
+		margin-bottom: 200px;
+	}
+	.offers-notice{
+		top: 120px;
+		right: 15px;
+	}
+	.numbers-img::after{
+		background: none;
+	}
+	.numbers-img {
+    height: 500px;
+		padding-top: 0;
+		top: auto;
+		bottom: 0;
+	}
+	.numbers-img img {
+		max-height: 100%;
+	}
+	.oportunity-image {
+    width: 50%;
+    height: 450px;
+    background-size: cover;
+		top: auto;
+    bottom: 0;
+	}
 	.section-faq{
 		padding: 75px 0 0;
 	}
@@ -242,7 +297,7 @@
 	header .description{
 		color: #fff;
 		font-size: 16px;
-		margin-top: 250px;
+		margin-top: 150px;
 	}
 	.offer-tags{
 		flex-direction: column;
@@ -276,7 +331,7 @@
 
 @media only screen and (min-width: 1400px) {
 	.container {
-    max-width: 1180px;
+    max-width: 1160px;
 	}
 }
 @media only screen and (min-width: 1200px) {

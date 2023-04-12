@@ -125,10 +125,7 @@ document.querySelectorAll('a[href*="#"]').forEach(function(link){
 
 const mainSlider = document.querySelector('.slider_main');
 if(mainSlider){
-	const container = document.querySelector('.container');
-	const marginWidth = (window.innerWidth - container.offsetWidth) / 2;
 	new Swiper('.slider_main', {
-		slidesOffsetBefore: marginWidth + 15,
 		slideToClickedSlide: true,
 		loop: true,
 		navigation: {
@@ -137,8 +134,7 @@ if(mainSlider){
 		},
 		breakpoints: {
 			0: {
-				slidesOffsetBefore: 10,
-				slidesPerView: 1.3,
+				slidesPerView: 1,
 				spaceBetween: 20
 			},
 			680: {
@@ -151,33 +147,20 @@ if(mainSlider){
 			},
 			1200: {
 				slidesPerView: 4,
-				spaceBetween: 20
+				spaceBetween: 40
 			}
 		}
 	});
 }
 
-const testimonialSlider = document.querySelector('.slider_testimonial');
-if(testimonialSlider){
-	new Swiper('.slider_testimonial', {
-		grabCursor: true,
-		effect: "creative",
-		creativeEffect: {
-			prev: {
-				shadow: true,
-				origin: "left center",
-				translate: ["-5%", 0, -200],
-				rotate: [0, 100, 0],
-			},
-			next: {
-				origin: "right center",
-				translate: ["5%", 0, -200],
-				rotate: [0, -100, 0],
-			},
-    },
+const casesSlider = document.querySelector('.slider_cases');
+if(casesSlider){
+	new Swiper('.slider_cases', {
+		slideToClickedSlide: true,
+		loop: true,
 		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
+			nextEl: ".swiper-button-right",
+			prevEl: ".swiper-button-left",
 		},
 		breakpoints: {
 			0: {
@@ -185,8 +168,12 @@ if(testimonialSlider){
 				spaceBetween: 20
 			},
 			680: {
-				slidesPerView: 1,
-				spaceBetween: 20
+				slidesPerView: 2,
+				spaceBetween: 30
+			},
+			1200: {
+				slidesPerView: 3,
+				spaceBetween: 40
 			}
 		}
 	});
