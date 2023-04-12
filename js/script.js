@@ -155,6 +155,18 @@ if(mainSlider){
 
 const casesSlider = document.querySelector('.slider_cases');
 if(casesSlider){
+	const slides = casesSlider.querySelectorAll('.slider__item');
+	let height = 0;
+
+	slides.forEach(function(slide){
+		if(slide.offsetHeight > height) height = slide.offsetHeight;
+	});
+
+	slides.forEach(function(slide){
+		const block = slide.querySelector('.case-block');
+		block.style.height = height + 45 + 'px';
+	});
+
 	new Swiper('.slider_cases', {
 		slideToClickedSlide: true,
 		loop: true,
